@@ -1,0 +1,6 @@
+<h1>Arquivo submetido (<%= @submission.id %>)</h1>
+
+<ul>
+  <li><%= link_to "Link", @submission.file.url %></li>
+  <li><%= link_to "Corrigir", edit_submission_path(@submission) %></li>
+</ul>

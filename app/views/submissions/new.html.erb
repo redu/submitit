@@ -1,0 +1,9 @@
+<h2>Submissão de arquivos</h2>
+<%= form_for @submission do |f| %>
+  <%= render :partial => 'submissions/form', :locals => { :f => f } %>
+<% end %>
+
+<h1>Ou...</h1>
+
+
+<h2><%= link_to "Veja os arquivos submetidos", space_submissions_path(current_space) %></h2>

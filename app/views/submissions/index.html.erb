@@ -1,0 +1,17 @@
+<h2>Seus exercícios</h2>
+<table>
+	<thead>
+    <tr>
+      <th>Exercício</th>
+      <th>Nota</th>
+    </tr>
+	</thead>
+  <tbody>
+    <% @submissions.each do |s| %>
+      <tr>
+        <td><%= link_to "Arquivo", s.file.url %></td>
+        <td><%= s.score || 'N/A' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
